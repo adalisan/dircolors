@@ -1,5 +1,3 @@
-LS_COLORS
-=========
 
 This is a collection of extension:color mappings, suitable to use as your
 LS COLORS environment variable. Most of them use the extended color map,
@@ -10,7 +8,7 @@ As of this writing, around 300 different filetypes/extensions is supported.
 That's indeed a lot of extensions, but there's a lot more! Your help is greatly
 appreciated.
 
-![bash-it Colourful Theme](https://github.com/ahmadassaf/configurations/blob/master/screenshots/bash-it_theme_colourful.png)
+![bash-it Structred ls](https://github.com/ahmadassaf/configurations/blob/master/screenshots/bash-it_structured_ls.png)
 
 ### Guidelines
 
@@ -57,11 +55,9 @@ DEVELOPERS
 There's a [library][1] written that lets you use various LS COLORS on
 arbitary files and directories. A simple implementation can be found [here][2].
 
-Using this, you can do
+Using this, you can do:
 
-    find $HOME -maxdepth 1  | ls_color
-
-    mpc search artist Laleh | ls_color
-
-... and so on.
-
+```shell
+find $HOME -maxdepth 1  | ls_color
+mpc search artist Laleh | ls_color
+```
